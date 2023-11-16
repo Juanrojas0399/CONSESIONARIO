@@ -1,0 +1,20 @@
+version: '3'
+
+services:
+  postgresql:
+    image: postgres
+    container_name: PostgreSql
+    restart: always
+    environment:
+      POSTGRES_USER: prime
+      POSTGRES_PASSWORD: Fyd4twrc4XUJrFUx
+    ports:
+      - "5432:5432"
+    volumes:
+      - C:/DESARROLLO/POSTGRESQL/postgresql-data:/var/lib/postgresql/data
+    networks:
+      - postgresql_network
+
+networks:
+  postgresql_network:
+    external: true

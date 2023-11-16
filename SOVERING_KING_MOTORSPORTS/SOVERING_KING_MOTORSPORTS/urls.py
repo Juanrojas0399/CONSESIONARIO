@@ -1,5 +1,5 @@
 """
-URL configuration for SOVERING_KING_MOTORSPORTS2 project.
+URL configuration for SOVERING_KING_MOTORSPORTS project.
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/4.2/topics/http/urls/
@@ -15,8 +15,18 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
+from apps.login.views import *
+#The line beneath this should be deleted after Deployment:
+from django.contrib.staticfiles.urls import staticfiles_urlpatterns
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('login/', include('apps.login.urls')),
+    # path('inventory/',include('inventory.urls')),
+    # path('order/',include('order.urls')),
 ]
+
+#The line beneath this should be deleted aftert Deployment:
+urlpatterns += staticfiles_urlpatterns()

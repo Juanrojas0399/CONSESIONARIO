@@ -1,5 +1,5 @@
 """
-ASGI config for SOVERING_KING_MOTORSPORTS2 project.
+ASGI config for SOVERING_KING_MOTORSPORTS project.
 
 It exposes the ASGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.asgi import get_asgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'SOVERING_KING_MOTORSPORTS2.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'SOVERING_KING_MOTORSPORTS.settings')
 
 application = get_asgi_application()

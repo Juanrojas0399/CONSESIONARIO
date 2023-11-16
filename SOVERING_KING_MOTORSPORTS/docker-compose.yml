@@ -1,0 +1,21 @@
+version: '3'
+services:
+  Django-app:
+    environment:
+      - PYTHONUNBUFFERED=0
+    tty: true
+    image: python
+    container_name: Django-app
+    #restart: always
+    volumes:
+      - C:\Users\Mateo\Documents\GitHub\CONSESIONARIO:/project
+    ports:
+      - "8000:8000"
+    #command: sh -c "source core/bin/activate && pip install -r /project/requirements.txt && python /app/manage.py runserver 0:8000"
+    #command: sh -c "cd /project/ source /project/owo/bin/activate && pip install -r /project/requirements.txt && bash"
+    networks:
+      - postgresql_network
+
+networks:
+  postgresql_network:
+    external: true
