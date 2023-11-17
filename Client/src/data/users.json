@@ -1,0 +1,72 @@
+[
+  {
+    "id":1,
+    "name":"Wilson Zapata",
+    "email":"test@email.com",
+    "recruitment_date":"16/05/2003",
+    "rol":"Usuario"
+  },
+  {
+    "id":2,
+    "name":"Mateo Duque",
+    "email":"test@email.com",
+    "recruitment_date":"12/05/2003",
+    "rol":"Gerente"
+  },
+  {
+    "id":3,
+    "name":"Juan Zurita",
+    "email":"test@email.com",
+    "recruitment_date":"19/05/2003",
+    "rol":"Usuario"
+  },
+  {
+    "id":4,
+    "name":"Mateo Jimenez",
+    "email":"test@email.com",
+    "recruitment_date":"12/05/2003",
+    "rol":"Gerente"
+  },
+  {
+    "id":5,
+    "name":"Mateo Duque",
+    "email":"test@email.com",
+    "recruitment_date":"19/05/2003",
+    "rol":"Usuario"
+  },
+  {
+    "id":6,
+    "name":"Juan Jose Rojas",
+    "email":"test@email.com",
+    "recruitment_date":"12/05/2003",
+    "rol":"Gerente"
+  },
+  {
+    "id":7,
+    "name":"Wilson Andres Mosquera",
+    "email":"test@email.com",
+    "recruitment_date":"19/05/2003",
+    "rol":"Usuario"
+  },
+  {
+    "id":8,
+    "name":"Wilson Andres Mosquera",
+    "email":"test@email.com",
+    "recruitment_date":"12/05/2003",
+    "rol":"Gerente"
+  },
+  {
+    "id":9,
+    "name":"Juan Jose Rojas",
+    "email":"test@email.com",
+    "recruitment_date":"19/05/2003",
+    "rol":"Usuario"
+  },
+  {
+    "id":10,
+    "name":"Mateo Duque",
+    "email":"test@email.com",
+    "recruitment_date":"12/05/2003",
+    "rol":"Gerente"
+  }
+]

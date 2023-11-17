@@ -360,11 +360,60 @@ class CustomerLogout(APIView):
         logout(request)
         return Response({"detail":"Logout successful"})
     
+class BranchAPI(APIView):
+    serializer_class = Branch_Serializer
+    def get_branch(self, pk):
+        try:
+            return Branch.objects.get(pk=pk)
+        except:
+            return None
+
+    def get(self,request,pk):
+        branch = self.get_branch(pk=pk)
+        if branch == None:
+            return Response({"status": "fail", "message": f"Branch with Id: {pk} not found"}, status=status.HTTP_404_NOT_FOUND)
+
+        data = {
+            "city": branch.city,
+            "address": branch.address,
+            "phone": branch.phone,
+            "email": branch.email    
+        }
+        return Response({"status": "success", "data": data})
+
+    def patch(self, request, pk):
+        branch = Branch.objects.get(id=pk)
+
+        if branch == None:
+            return Response({"status": "fail", "message": f"Branch with Id: {pk} not found"}, status=status.HTTP_404_NOT_FOUND)
+
+        #Modifying the branch
+        with transaction.atomic():
+            serializer = self.serializer_class(branch, data=request.data, partial=True)
+            data = {
+                "city" : branch.city,
+                "address" : branch.address,
+                "phone": branch.phone,
+                "email": branch.email
+            }
+
+        if serializer.is_valid():
+            serializer.save()
+            return Response({"status": "success", "data": data})
+        else:
+            return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+        
+class Branch_get_all(ListAPIView):
+    queryset = Branch.objects.all()
+    serializer_class = Branch_Serializer    
+    
+
 class otpLogin(APIView):
     def post(self, request):
         data = self.request.data
         message = 'Tu código de verificación es: ' + str(data['code'])
         email = data['email']
+        print(email)
         send_mail(
             'SOVEREING KING MOTORSPORTS - Tu código de verificación de dos pasos',
             message,

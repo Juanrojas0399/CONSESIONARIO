@@ -25,8 +25,9 @@ SECRET_KEY = 'django-insecure-0!yhom!c1%*(_@l*1f=ijsd8lir7_wj*%29py@gky$@jb689k0
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = "sovereingkingmpcustomerservice@gmail.com"
-EMAIL_HOST_PASSWORD = 'skmp1999'
+EMAIL_HOST_USER = "sovereingkinginternalservices@gmail.com"
+# EMAIL_HOST_PASSWORD = 'Egf7HTxshHeyewN9'
+EMAIL_HOST_PASSWORD = 'txvr ryuy tfca tbzr'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
@@ -43,6 +44,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'apps.login',
+    'apps.inventory',
+    'apps.order',
 ]
 
 MIDDLEWARE = [

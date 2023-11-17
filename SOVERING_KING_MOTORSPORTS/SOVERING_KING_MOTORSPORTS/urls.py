@@ -24,8 +24,8 @@ from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('login/', include('apps.login.urls')),
-    # path('inventory/',include('inventory.urls')),
-    # path('order/',include('order.urls')),
+    path('inventory/',include('apps.inventory.urls')),
+    path('order/',include('apps.order.urls')),
 ]
 
 #The line beneath this should be deleted aftert Deployment:
