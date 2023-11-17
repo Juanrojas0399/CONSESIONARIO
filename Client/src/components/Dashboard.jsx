@@ -146,7 +146,7 @@ export default function Dashboard() {
           >
             <MenuIcon />
           </IconButton>
-          <Link className="navbar-brand " to='/'><img src={img} alt="Litio" width={130} /></Link>
+          <Link className="navbar-brand " to='/'><img src={img} alt="SKMS" width={130} /></Link>
           <Typography component="h1" variant="h6" color="inherit" noWrap className={classes.title}>
             &emsp; Dashboard
           </Typography>

@@ -93,7 +93,7 @@ const CardCar = () => {
               } COP 
               </h3>
               <br></br>
-              <h5 style={{bottom: '10%'}}>Si deseas realizar una cotización de este vehículo, contáctate con nosotros a <font style={{color: '#039257'}}>litioservice@gmail.com</font>, o a una de nuestras sucursales:</h5>
+              <h5 style={{bottom: '10%'}}>Si deseas realizar una cotización de este vehículo, contáctate con nosotros a <font style={{color: '#039257'}}>sovereingkinginternalservices@gmail.com</font>, o a una de nuestras sucursales:</h5>
               <br></br>
               <button className='buttonC' onClick={openCloseSucursalModal}>Sucursales</button>
             </div>
