@@ -1,0 +1,13 @@
+{
+    "builds": [
+      {
+        "src": "sovereing-king-motorsports/wsgi.py",
+        "use": "@vercel/python"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "sovereing-king-motorsports/wsgi.py"
+      }
+    ]
