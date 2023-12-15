@@ -183,7 +183,7 @@ function LoginForm() {
             </div>
           <div className="captcha">
             <ReCAPTCHA
-                sitekey="6LfbAWYmAAAAAIcvGyc_u-_dV9WKtiTnUE4dfAzU"
+                sitekey="6Ldy7DEpAAAAAFc-XXDdQLzbAele0tLglsEQmcvh"
                 ref={captcha}
                 onChange={onChange}
                 onExpired={caducated}
