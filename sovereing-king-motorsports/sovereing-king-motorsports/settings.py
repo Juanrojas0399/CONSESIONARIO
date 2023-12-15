@@ -71,6 +71,7 @@ CORS_ALLOWED_ORIGINS = [
     'http://127.0.0.1',
     'http://0.0.0.0',
     'http://localhost:5173',
+    'https://consesionario-front-juan-rojas-projects.vercel.app'
 ]
 
 AUTHENTICATION_BACKENDS = ['apps.login.views.EmailBackend']
