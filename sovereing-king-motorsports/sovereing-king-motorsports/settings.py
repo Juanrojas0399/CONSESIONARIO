@@ -50,6 +50,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'corsheaders',
     'apps.login',
     'apps.inventory',
     'apps.order',
@@ -64,18 +65,19 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
 ]
 
 CORS_ALLOW_ALL_ORIGINS = True
 
-CORS_ALLOWED_ORIGINS = [
+#CORS_ALLOWED_ORIGINS = [
 #    'http://localhost',
 #    'http://127.0.0.1',
 #    'http://0.0.0.0',
 #    'http://localhost:5173',
 #    'https://consesionario-front-juan-rojas-projects.vercel.app'
-    '*',
-]
+#    '*',
+#]
 
 AUTHENTICATION_BACKENDS = ['apps.login.views.EmailBackend']
 
