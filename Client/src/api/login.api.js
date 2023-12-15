@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const loginApi = axios.create({
-    baseURL: 'https://consesionario-juan-rojas-projects.vercel.app/login/'
+    baseURL: 'https://consesionario.vercel.app/login/'
 });
 
 export const getCustomers = () => {
