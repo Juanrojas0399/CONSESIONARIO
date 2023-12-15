@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const articleApi = axios.create({
-    baseURL: 'https://consesionario.vercel.app/inventory/'
+    baseURL: 'https://consesionario-juan-rojas-projects.vercel.app/inventory/'
 });
 
 export const getAllCars = () => {
