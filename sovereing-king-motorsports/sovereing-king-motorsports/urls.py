@@ -19,6 +19,8 @@ from django.urls import path, include
 from apps.login.views import *
 #The line beneath this should be deleted after Deployment:
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
+from django.conf import settings
+from django.conf.urls.static import static
 
 
 urlpatterns = [
@@ -30,3 +32,5 @@ urlpatterns = [
 
 #The line beneath this should be deleted aftert Deployment:
 urlpatterns += staticfiles_urlpatterns()
+urlpatterns += static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)
+urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
