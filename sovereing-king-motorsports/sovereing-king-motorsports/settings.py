@@ -36,10 +36,11 @@ EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 ALLOWED_HOSTS = [
-    'consesionario-juan-rojas-projects.vercel.app',
+    '*'
 ]
 
-
+STATICFILES_DIRS = os.path.join(BASE_DIR, 'static'),
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build', 'static')
 # Application definition
 
 INSTALLED_APPS = [
